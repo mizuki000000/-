@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>コンピューターリテラシーの名刺QR</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                padding: 2em;
+                max-width: 800px;
+                margin: auto;
+                background-color: #d8d8e6;
+                color:#333;
+            }
+            h1,h2{
+                color: #444;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+
+            }
+           a {
+            color: #8A2BE2;
+           }
+
+           .bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            min-width: 100vw;
+            min-height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(100%) blur(1px) hue-rotate(270deg) saturate(120%);
+            
+
+           }
+           .lavender-overlay {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100vw;
+           height: 100vh;
+           background-color: rgba(230, 200, 255, 0.3); /* ←ラベンダー */
+           z-index: -0.5; /* 動画より上・他要素より下 */
+           pointer-events: none; /* クリックを邪魔しない！ */
+           }
+
+
+
+        </style>
+    </head>
+<body>
+    <h1 style="background-color: rgba(255, 255, 255, 1);">コンピューターリテラシー名刺作り<h1>
+    <h2 style="background-color: rgba(255, 255, 255, 1);">自己紹介</h2>
+    <p style="background-color: rgba(255, 255, 255, 1);">学番：5CDI1122<br>
+        誕生日：６月１日<br>
+        好きなたべもの：ハンバーグ、インドカレー<br>
+        飼ってた生き物：祭りの金魚<br>
+        最近興味あること：localAIでパソコン内の作業を効率化すること。</p><p><br><br><br> <br><br><br><br><br><br><br>       
+    </p>    
+    <h2>没案</h2>
+    <p> </p>
+    <img src="img/draft1.png" alt="案1">
+    <img src="img/draft2.png" alt="案2">
+    <img src="img/draft3.png" alt="案3">
+   
+    <video src="img/金魚１.mp4" autoplay loop muted playsinline class="bg-video"></video>
+    <div class="lavender-overlay"></div>
+</body>
+</html>
