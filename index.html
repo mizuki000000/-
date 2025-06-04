@@ -55,7 +55,7 @@
 <body>
     <h1 style="background-color: rgba(255, 255, 255, 1);">コンピューターリテラシー名刺作り<h1>
     <h2 style="background-color: rgba(255, 255, 255, 1);">自己紹介</h2>
-    <p style="background-color: rgba(255, 255, 255, 1);">学番：5CDI1122<br>
+    <p style="background-color: rgba(255, 255, 255, 1);">
         誕生日：６月１日<br>
         好きなたべもの：ハンバーグ、インドカレー<br>
         飼ってた生き物：祭りの金魚<br>
@@ -67,7 +67,20 @@
     <img src="img/draft2.PNG" alt="案2">
     <img src="img/draft3.PNG" alt="案3">
    
-    <video src="img/金魚１.mp4" autoplay loop muted playsinline class="bg-video"></video>
-    <div class="lavender-overlay"></div>
+   <video id="video1" src="img/金魚.mp4" autoplay muted playsinline class="bg-video"></video>
+<video id="video2" src="img/金魚覚醒.mp4" muted playsinline loop class="bg-video" style="display: none;"></video>
+<div class="lavender-overlay"></div>
+
+        <script>
+  const video1 = document.getElementById("video1");
+  const video2 = document.getElementById("video2");
+
+  video1.addEventListener("ended", () => {
+    video1.style.display = "none";
+    video2.style.display = "block";
+    video2.play();
+  });
+</script>
+
 </body>
 </html>
